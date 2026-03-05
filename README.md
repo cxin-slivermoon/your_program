@@ -1,5 +1,105 @@
 # EDA Elite Challenge 2025 · Track 2 — One-Stop Pipeline
 
+This repository provides a **one-stop entry script** to run inference and export **competition-format JSON outputs** for  
+**2025 China Graduate IC Innovation Competition · EDA Elite Challenge (Track 2: Circuit System Block Diagram Recognition & Parsing)**.
+
+---
+
+## Goal
+
+Given integrated-circuit system block diagrams, the goal is to automatically convert **unstructured images** into **structured design knowledge**, and produce **JSON outputs** that match the competition requirements.
+
+---
+
+## Supported Tasks
+
+### Task 1: Structured Topology Reconstruction
+Using **CV + multimodal models** to:
+- Detect components (name / bounding box)
+- Count component I/O ports (number of input / output ports)
+- Extract inter-component connections (`input` / `output` lists)
+- Produce competition-format JSON aligned one-to-one with the provided labels
+
+### Task 2: Logical Reasoning QA
+Using a multimodal LLM to reason about analog-circuit related questions:
+- Generate and answer **multiple-choice** / **fill-in-the-blank** QA
+- Validate understanding of the diagram’s overall logic and intended functionality
+
+---
+
+## Recommended Directory Layout
+
+
+> Before running, make sure the **base model + adapters**, images, and question files are placed according to your code’s loading paths.
+
+---
+
+## Usage
+
+`entry.py` is the entry point. Run:
+
+```bash
+python entry.py   --image_path EDA_CASES_1024/images   --task2_question_path EDA_CASES_1024/task2_questions   --output_path 02_entry_template
+```
+
+Arguments:
+- `--image_path`: directory of competition images
+- `--task2_question_path`: directory of Task 2 questions
+- `--output_path`: directory to write output JSON files (competition format)
+
+---
+
+## Model Setup
+
+- Base model: **Qwen2.5-VL-3B**
+- Adapters: `adapter_model.safetensors` (trained separately)
+
+Please place the base model and corresponding adapters before running (paths follow your code/config).
+
+---
+
+## Dataset Notes
+
+### Task 1 Training Data
+- `connection_Image1-5/`: connection training images (for Task 1)
+- `train_connection.json`: provided wire/connection annotation dataset
+
+### Task 2 Training Data
+- `image1-5/`: original images (for Task 2)
+- `mllm_data.json`: provided VQA dataset
+
+---
+
+## Training & Reproduction (LoRA)
+
+We use **LLaMA-Factory** for LoRA fine-tuning and hyperparameter settings to reproduce competition results.
+
+High-level steps:
+1. Prepare Task 1 / Task 2 datasets
+2. Fine-tune with LoRA (or QLoRA) using LLaMA-Factory
+3. Export `adapter_model.safetensors`
+4. Load **Qwen2.5-VL-3B + adapter**, then run `entry.py` to generate competition-format outputs
+
+---
+
+## Disclaimer & Data Source
+
+All dataset images originate from:
+**2025 China Graduate IC Innovation Competition · EDA Elite Challenge (Track 2)**.
+
+If any content infringes rights, please contact **cxin7354@gmail.com** for removal. Thank you.
+
+---
+
+## Contact
+
+- Author: XIN
+- Email: cxin7354@gmail.com
+
+
+
+# EDA Elite Challenge 2025 · Track 2 — One-Stop Pipeline
+
 本项目提供**一站式脚本**，用于完成 **2025 中国研究生创“芯”大赛·EDA 精英挑战赛（赛题二：电路系统框图识别与解析）** 的端到端推理与结果导出（Json）。
 
 ---

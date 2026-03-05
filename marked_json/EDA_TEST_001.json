@@ -1,0 +1,140 @@
+{
+  "task1": [
+    {
+      "Component": "A",
+      "Pos": [
+        923,
+        120,
+        1027,
+        175
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "B",
+      "Pos": [
+        779,
+        146,
+        875,
+        215
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "C",
+      "Pos": [
+        779,
+        294,
+        892,
+        366
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "D",
+      "Pos": [
+        350,
+        295,
+        453,
+        365
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "E",
+      "Pos": [
+        541,
+        295,
+        652,
+        365
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "F",
+      "Pos": [
+        214,
+        302,
+        270,
+        358
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "G",
+      "Pos": [
+        948,
+        303,
+        1003,
+        358
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "H",
+      "Pos": [
+        541,
+        477,
+        645,
+        549
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "task1": [
+    {
+      "Component": "A",
+      "Pos": [
+        408,
+        37,
+        443,
+        72
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "B",
+      "Pos": [
+        482,
+        43,
+        519,
+        82
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "C",
+      "Pos": [
+        778,
+        46,
+        813,
+        84
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "D",
+      "Pos": [
+        563,
+        47,
+        598,
+        82
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "E",
+      "Pos": [
+        648,
+        47,
+        683,
+        82
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "F",
+      "Pos": [
+        408,
+        96,
+        442,
+        132
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "G",
+      "Pos": [
+        8,
+        97,
+        44,
+        133
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "H",
+      "Pos": [
+        168,
+        101,
+        214,
+        158
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "I",
+      "Pos": [
+        333,
+        111,
+        368,
+        147
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "J",
+      "Pos": [
+        258,
+        112,
+        292,
+        146
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "K",
+      "Pos": [
+        58,
+        157,
+        92,
+        191
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    },
+    {
+      "Component": "L",
+      "Pos": [
+        319,
+        252,
+        353,
+        286
+      ],
+      "I_O": {
+        "input": 0,
+        "output": 0
+      },
+      "Connection": {
+        "input": [],
+        "output": []
+      }
+    }
+  ]
+}
